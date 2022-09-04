@@ -49,6 +49,12 @@ function logochange() {
         case "twitter":
             image.src = "/media/Logotwitter.png";
             break;
+        case "sheets":
+            image.src = "/media/Logosheets.png";
+            break;
+        case "slides":
+            image.src = "/media/Logoslides.png";
+            break;
         default:
             image.src = "/media/Logo.png";
             break;
@@ -136,6 +142,16 @@ function search() {
             L.splice(0,1);
             var str = L.join("%20");
             window.open("https://twitter.com/search?q=" + str, "_blank");
+            break;
+        case "sheets":
+            L.splice(0, 1);
+            var str = L.join("%20");
+            window.open("https://docs.google.com/spreadsheets/u/0/?q=" + str, "_blank");
+            break;
+        case "slides":
+            L.splice(0, 1);
+            var str = L.join("%20");
+            window.open("https://docs.google.com/presentation/u/0/?q=" + str, "_blank");
             break;
         default:
             var str = L.join("+");
